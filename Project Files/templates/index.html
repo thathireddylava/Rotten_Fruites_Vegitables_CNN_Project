@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NutriGaze | Home</title>
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                        url("/static/ui_1.jpg") no-repeat center center/cover;
+            height: 100vh;
+            color: white;
+        }
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="/">NUTRIGAZE</a>
+        <div>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/predict">Predict</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="container text-center">
+        <span class="badge bg-light text-dark mb-3">Welcome to NutriGaze</span>
+        <h1 class="display-4 fw-bold mt-3">GREENGUARD INSIGHTS</h1>
+        <p class="lead mt-3">
+            We help you detect whether fruits and vegetables are
+            <b>Healthy</b> or <b>Rotten</b> using AI.
+        </p>
+        <a href="/predict" class="btn btn-danger btn-lg mt-3">Get Started</a>
+    </div>
+</section>
+
+</body>
+</html>
